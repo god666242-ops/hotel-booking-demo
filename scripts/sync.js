@@ -7,8 +7,9 @@ const root = path.join(__dirname, "..");
 const sitesDir = path.join(root, "..", "individual-sites");
 
 if (!fs.existsSync(sitesDir)) {
-  console.error("sync: cannot find ../individual-sites next to demo-showcase.");
-  process.exit(1);
+  console.log("sync: warning: cannot find ../individual-sites next to demo-showcase.");
+  console.log("sync: skipping synchronization and using existing generated build files.");
+  process.exit(0); // Exit successfully so Vercel/production builds don't crash
 }
 
 const read = (f) => fs.readFileSync(f, "utf8");
@@ -49,7 +50,7 @@ for (const { slug } of sites) {
   for (const d of ["components", "lib"]) if (fs.existsSync(path.join(src, d))) cp(path.join(src, d), path.join(h, d));
 
   // 2) each hotel gets its OWN root layout (own <html>, own CSS, own fonts) so styles never leak between hotels
-  //    app/(slug)/layout.js + globals.css   ->   app/(slug)/<slug>/page.js   =>   URL /<slug>
+  //    app/(slug)/layout.js + globals.css    ->    app/(slug)/<slug>/page.js   =>   URL /<slug>
   const g = path.join(root, "app", `(${slug})`);
   write(path.join(g, "globals.css"), read(path.join(src, "app", "globals.css")));
 

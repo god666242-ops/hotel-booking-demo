@@ -1,0 +1,17 @@
+*{margin:0;box-sizing:border-box}html{scroll-behavior:smooth}body{background:#f6faf6;color:#16301f;line-height:1.55}a{color:inherit}
+.ph{position:relative;overflow:hidden;background:#cfe3d3}.abs{position:absolute;inset:0}
+.hero{position:relative;min-height:80vh;display:grid;place-items:center;text-align:center;color:#fff;padding:30px}.shade{position:absolute;inset:0;background:linear-gradient(#0a3d1fcc,#0a3d1f66)}
+.hc{position:relative;max-width:760px}.logo{display:inline-block;background:#fff;color:#0a7d4f;padding:6px 18px;border-radius:99px;margin-bottom:20px}
+h1{font-size:clamp(30px,5.5vw,54px);line-height:1.15;font-weight:800}.hc p{margin:16px 0 26px;font-size:20px}
+.btn{background:#ffb703;color:#16301f;padding:15px 34px;border-radius:12px;font-weight:800;text-decoration:none;display:inline-block}
+.chips{display:flex;flex-wrap:wrap;justify-content:center;gap:10px;margin:-26px 20px 0;position:relative}.chips span{background:#fff;box-shadow:0 6px 18px #0002;border-radius:99px;padding:10px 18px;font-weight:700;font-size:14px}
+section{max-width:1150px;margin:0 auto;padding:56px 20px}h2{font-size:32px;font-weight:800;margin-bottom:24px;text-align:center}
+.grid3{display:grid;grid-template-columns:repeat(auto-fit,minmax(290px,1fr));gap:24px}.rc{background:#fff;border-radius:20px;overflow:hidden;box-shadow:0 8px 24px #0a7d4f1a}
+.rimg{height:210px}.rb{padding:20px}.pk{color:#4c6b57;font-size:14px;margin-top:4px}.rp{display:flex;align-items:baseline;gap:6px;margin-top:14px}.rp b{font-size:26px;color:#0a7d4f}.rp span{color:#4c6b57;flex:1}
+.rp a{background:#0a7d4f;color:#fff;padding:9px 22px;border-radius:10px;text-decoration:none;font-weight:700}
+.band{max-width:none;background:#0a7d4f;color:#fff}.band h2{color:#fff}.wbox{max-width:900px;margin:auto;background:#fff;color:#16301f;border-radius:20px;padding:24px}
+.pills{display:flex;flex-wrap:wrap;gap:12px;justify-content:center}.pills span{background:#e3f3e8;padding:11px 20px;border-radius:99px;font-weight:600}.pills.alt span{background:#fff;border:2px solid #cfe3d3}.pills em{font-style:normal;color:#0a7d4f;margin-left:8px;font-weight:800}
+.g6{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}.g6 .ph{height:210px;border-radius:16px}
+.narrow{max-width:800px}.faq details{background:#fff;border-radius:14px;padding:16px 20px;margin-bottom:10px}.faq summary{font-weight:700;cursor:pointer}.faq p{margin-top:8px;color:#4c6b57}
+.map{width:100%;height:340px;border:0;border-radius:20px}footer{background:#16301f;color:#cfe3d3;text-align:center;padding:44px 20px;line-height:1.8}.bar{display:none}
+@media(max-width:800px){.g6{grid-template-columns:1fr 1fr}.bar{display:flex;gap:8px;position:fixed;bottom:10px;left:10px;right:10px;z-index:9}.bar a{flex:1;text-align:center;padding:13px;border-radius:14px;background:#0a7d4f;color:#fff;font-weight:800;text-decoration:none;box-shadow:0 6px 18px #0004}body{padding-bottom:70px}}

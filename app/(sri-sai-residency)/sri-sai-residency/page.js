@@ -52,7 +52,7 @@ export default function P() {
             </p>
             <div className="reserve">
               {/* PureBook Web Component Widget */}
-              <hotel-booking-engine data-hotel={s.slug}></hotel-booking-engine>
+              <hotel-booking-engine data-hotel="grand-palms"></hotel-booking-engine>
 
               <a
                 className="wa"

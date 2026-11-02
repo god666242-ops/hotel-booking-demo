@@ -18,7 +18,7 @@ const links = [
 export default function P() {
   return (
     <>
-      {/* PureBook Booking Engine CDN Script */}
+      {/* 1. Embed the CDN Engine */}
       <Script
         src="https://cdn.purebook.in/engine.js"
         strategy="afterInteractive"
@@ -43,6 +43,7 @@ export default function P() {
           Call us
         </a>
       </header>
+
       <main id="top">
         <section className="hero">
           <div className="ht">
@@ -50,8 +51,9 @@ export default function P() {
             <p className="lead">
               {s.tag} Rooms start at <b>{inr(s.from)}</b> a night.
             </p>
+
             <div className="reserve">
-              {/* PureBook Web Component Widget */}
+              {/* 2. Just the custom element tag — nothing else */}
               <hotel-booking-engine data-hotel="grand-palms"></hotel-booking-engine>
 
               <a
@@ -63,12 +65,14 @@ export default function P() {
                 Ask on WhatsApp
               </a>
             </div>
+
             <ul className="facts">
               {s.trust.map((t) => (
                 <li key={t}>{t}</li>
               ))}
             </ul>
           </div>
+
           <div className="hp">
             <Img
               src={s.images.hero}
